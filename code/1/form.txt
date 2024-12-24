@@ -1,0 +1,22 @@
+
+                <form action="">
+                    <ul>
+                        <li>
+                            <label for="user-name">Name</label>
+                            <input type="text" id="user-name" name="user-name" placeholder="Alice Smith">
+                        </li>
+                        <li>
+                            <label for="user-phone">Telephone</label>
+                            <input type="tel" id="user-phone" name="user-phone" placeholder="+380...">
+                        </li>
+                        <li>
+                            <label for="user-email">Email</label>
+                            <input type="email" id="user-email" name="user-email" placeholder="email@email.com">
+                        </li>
+                        <li>
+                            <label for="user-comment">Comment</label>
+                            <textarea id="user-comment" name="user-comment" placeholder="Your comment" id="textarea"></textarea>
+                        </li>
+                    </ul>
+                    <button type="submit">Send</button>
+                </form>
