@@ -1,0 +1,19 @@
+.hero__title {
+    font-family: var(--title-font);
+    font-weight: 700;
+    font-size: 94px;
+
+    margin-bottom: 74px;
+}
+
+th {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+td {
+    font-size: 18px;
+    text-align: left;
+    vertical-align: top;
+}

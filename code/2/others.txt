@@ -1,0 +1,7 @@
+*[type="button"]:hover,
+*[type="button"]:focus,
+*[type="submit"]:hover,
+*[type="submit"]:focus {
+    background-color: var(--hover-color);
+    cursor: pointer;
+}

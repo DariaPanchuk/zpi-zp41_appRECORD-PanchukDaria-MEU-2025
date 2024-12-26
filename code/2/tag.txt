@@ -1,0 +1,30 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+div {
+    margin: 0;
+    padding: 0;
+}
+
+table, th, td {
+    border: 1px solid var(--accent-color);
+    border-collapse: collapse;
+    padding: 15px;
+}
+
+th {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+td {
+    font-size: 18px;
+    text-align: left;
+    vertical-align: top;
+}
