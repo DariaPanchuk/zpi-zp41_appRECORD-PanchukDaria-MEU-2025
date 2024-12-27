@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курси</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="page">
+    <main>
+        <section class="section card">
+            <div class="card__img">
+                <img width="500" height="600" src="https://siluette.com.ua/wp-content/uploads/2021/09/html5-css3-2.jpg" alt="HTML і CSS Професійний курс частина 1">
+            </div>
+            <div class="card__info">
+                <h1 class="title">HTML і CSS Професійний курс частина 1</h1>
+                <p class="card__price"><span class="old-price">1,190 грн</span> 390 грн</p>
+                <div class="card__profit">
+                    <svg class="svg economy-svg" width="20" height="20">
+                        <use href="./img/svg/symbol-defs.svg#icon-econ"></use>
+                    </svg>
+                    <p class="card__economy">Ви економите: 800 грн (67 %)</p>
+                </div>
+                <div class="card__profit card__profit--time">
+                    <svg class="svg time-svg" width="20" height="20">
+                        <use href="./img/svg/symbol-defs.svg#icon-time"></use>
+                    </svg>
+                    <p class="card__time">Покваптеся! Закінчується через 1 день 12 годин 03 хвилини <br> 38 сек</p>
+                </div>
+                <p class="card__desc">Відео запис курсу HTML і CSS. На цьому курсі ви <br> навчитеся робити справжні проєкти, такі ж за рівнем складності, як в
+                індустрії. І робитимете їх правильно, <br> щоб після навчання видавати результат високого рівня, <br> за який компанії готові
+                платити.</p>
+                <button class="card__button" type="submit">Купити</button>
+                <ul class="list">
+                    <li class="card__item">
+                        <svg class="card__svg" width="44" height="44">
+                            <use href="./img/svg/symbol-defs.svg#icon-pay"></use>
+                        </svg>
+                        <p>Безпечні платежі</p>
+                    </li>
+                    <li class="card__item">
+                        <svg class="card__svg" width="44" height="44">
+                            <use href="./img/svg/symbol-defs.svg#icon-secur"></use>
+                        </svg>
+                        <p>Захист персональних даних</p>
+                    </li>
+                    <li class="card__item">
+                        <svg class="card__svg" width="44" height="44">
+                            <use href="./img/svg/symbol-defs.svg#icon-quality3"></use>
+                        </svg>
+                        <p>100 % унікальні матеріали</p>
+                    </li>
+                    <li class="card__item">
+                        <svg class="card__svg" width="44" height="44">
+                            <use href="./img/svg/symbol-defs.svg#icon-wallet"></use>
+                        </svg>
+                        <p>Гарантія кращої ціни</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section">
+            <h2 class="products__title">Схожі товари</h2>
+            <ul class="list products__list">
+                <li class="products__item">
+                    <img width="286" height="340" src="https://siluette.com.ua/wp-content/uploads/2021/09/Annotation-2019-05-31-174921-2.jpg" alt="Linux з нуля – відеокурс">
+                    <p class="products__desc">Linux з нуля – відеокурс</p>
+                    <p class="products__price"><span class="products__old-price">1,190 грн</span> 390 грн</p>
+                </li>
+                <li class="products__item">
+                    <img width="286" height="340" src="https://siluette.com.ua/wp-content/uploads/2021/09/Windows-2.jpg" alt="Віддалене адміністрування серверів Windows">
+                    <p class="products__desc">Віддалене адміністрування серверів Windows</p>
+                    <p class="products__price"><span class="products__old-price">790 грн</span> 290 грн</p>
+                </li>
+                <li class="products__item">
+                    <img width="286" height="340" src="https://siluette.com.ua/wp-content/uploads/2021/09/1_46sdgmDjKM60HJDLHyDhkQ-1.jpg" alt="Курс Angular 8">
+                    <p class="products__desc">Курс Angular 8</p>
+                    <p class="products__price"><span class="products__old-price">1,190 грн</span> 390 грн</p>
+                </li>
+                <li class="products__item">
+                    <img width="286" height="340" src="https://siluette.com.ua/wp-content/uploads/2021/09/18261471-2.jpg" alt="Відео курс системного адміністратора">
+                    <p class="products__desc">Відео курс системного адміністратора</p>
+                    <div class="buy-link">
+                        <a class="link products__link" href="">Купити</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="section">
+        <ul class="list footer__list">
+            <li class="footer__item">
+                <h3 class="footer__title">Допомога</h3>
+                <hr class="line">
+                <ul class="list">
+                    <li class="footer__nav"><a class="link footer__link" href="">Довідка</a></li>
+                    <li class="footer__nav"><a class="link footer__link" href="">Конфіденційність</a></li>
+                    <li class="footer__nav"><a class="link footer__link" href="">Умови використання</a></li>
+                </ul>
+            </li>
+            <li class="footer__item">
+                <h3 class="footer__title">Зв'язатися з нами</h3>
+                <hr class="line">
+            </li>
+            <li class="footer__item">
+                <h3 class="footer__title">Наші партнери</h3>
+                <hr class="line">
+                <img src="./img/images/3___.png" alt="Наші партнери">
+            </li>
+            <li class="footer__item">
+                <h3 class="footer__title">Безпечні платежі</h3>
+                <hr class="line">
+                <ul class="list pays__list">
+                    <li>
+                        <svg width="100" height="60">
+                            <use href="./img/svg/symbol-defs.svg#icon-visa"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg width="100" height="60">
+                            <use href="./img/svg/symbol-defs.svg#icon-mastercard"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg width="100" height="60">
+                            <use href="./img/svg/symbol-defs.svg#icon-pci"></use>
+                        </svg>
+                    </li>
+                </ul>
+                <p class="pays__desc">Усі операції на нашому сайті безпечні та проходять з використанням шифрованого SSL з'єднання.</p>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

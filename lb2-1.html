@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Document Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            margin: 10px;
+        }
+
+        #viewer {
+            width: 80%;
+            height: 650px;
+            border: none;
+            margin-top: 10px;
+            background-color: rgb(255, 251, 229);
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Buttons to load different documents -->
+    <div>
+        <button
+            onclick="loadDocument('https://dariapanchuk.github.io/zpi-zp41_appWEB-PanchukDaria-2025_/')">Проєкт</button>
+        <button onclick="loadDocument('./code/2/git.txt')">Розташування</button>
+        <button onclick="loadDocument('./code/3/main-css.txt')">CSS</button>
+        <button onclick="loadDocument('./code/3/main-html.txt')">HTML</button>
+        <button onclick="loadDocument('https://dariapanchuk.github.io/zpi-zp41_WEB2-PanchukDaria-2025/1.html')">Фіксована таблична верстка</button>
+        <button onclick="loadDocument('https://dariapanchuk.github.io/zpi-zp41_WEB2-PanchukDaria-2025/2.html')">Гумова таблична верстка</button>
+        <button onclick="loadDocument('https://dariapanchuk.github.io/zpi-zp41_WEB2-PanchukDaria-2025/3.html')">Фіксована блокова верстка</button>
+        <button onclick="loadDocument('https://dariapanchuk.github.io/zpi-zp41_WEB2-PanchukDaria-2025/4.html')">Гумова блокова верстка</button>
+        <button onclick="loadDocument('https://dariapanchuk.github.io/zpi-zp41_WEB2-PanchukDaria-2025/5.html')">Завдання 3</button>
+        <button onclick="loadDocument('./code/3/3-css.txt')">CSS</button>
+        <button onclick="loadDocument('./code/3/3-html.txt')">HTML</button>
+        <button onclick="loadDocument('./code/3/conc.txt')">Висновки</button>
+    </div>
+
+    <!-- Embedded window (iframe) -->
+    <iframe id="viewer" src="" frameborder="0"></iframe>
+
+    <!-- JavaScript to change iframe source -->
+    <script>
+        function loadDocument(url) {
+            document.getElementById('viewer').src = url;
+        }
+    </script>
+</body>
+
+</html>
