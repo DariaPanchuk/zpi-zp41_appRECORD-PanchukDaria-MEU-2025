@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Document Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            margin: 10px;
+        }
+
+        #viewer {
+            width: 80%;
+            height: 650px;
+            border: none;
+            margin-top: 10px;
+            background-color: rgb(255, 251, 229);
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Buttons to load different documents -->
+    <div>
+        <button onclick="loadDocument('./code/4/main.txt')">Розташування</button>
+        <button onclick="loadDocument('./code/4/pdf/1.pdf')">Завдання 1</button>
+        <button onclick="loadDocument('./code/4/pdf/2.pdf')">Завдання 2</button>
+        <button onclick="loadDocument('./code/4/pdf/3.pdf')">Завдання 3</button>
+        <button onclick="loadDocument('./code/4/pdf/4.pdf')">Завдання 4</button>
+        <button onclick="loadDocument('./code/4/5.txt')">Завдання 5: Код</button>
+        <button onclick="loadDocument('https://dariapanchuk.github.io/zpi-zp41_WEB3-PanchukDaria-2025/')">Завдання 5: Жива сторінка</button>
+        <button onclick="loadDocument('./code/4/conc.txt')">Висновки</button>
+    </div>
+
+    <!-- Embedded window (iframe) -->
+    <iframe id="viewer" src="" frameborder="0"></iframe>
+
+    <!-- JavaScript to change iframe source -->
+    <script>
+        function loadDocument(url) {
+            document.getElementById('viewer').src = url;
+        }
+    </script>
+</body>
+
+</html>
