@@ -11,7 +11,7 @@
             display: flex;
             margin: 10px;
         }
-    
+
         #viewer {
             width: 90%;
             height: 450px;
@@ -19,7 +19,7 @@
             border-radius: 5px;
             background-color: rgb(255, 251, 229);
         }
-    
+
         button {
             padding: 5px 5px;
             margin: 0 10px 10px 0;
@@ -29,13 +29,13 @@
             border-radius: 5px;
             background-color: rgb(255, 251, 229);
         }
-    
+
         button:hover,
         button:focus {
             color: #fff;
             background-color: rgb(162, 143, 237);
         }
-    
+
         div {
             display: flex;
             flex-direction: column;
@@ -46,17 +46,26 @@
 <body>
     <!-- Buttons to load different documents -->
     <div>
-        <button onclick="loadDocument('https://dariapanchuk.github.io/zpi-zp41_appWEB-PanchukDaria-2025_/')">Проєкт</button>
+        <button
+            onclick="loadDocument('https://dariapanchuk.github.io/zpi-zp41_appWEB-PanchukDaria-2025_/')">Проєкт</button>
         <button onclick="loadDocument('./code/2/git.txt')">Розташування</button>
-        <button onclick="loadDocument('./code/2/styles.txt')">Підключення стилів</button>
-        <button onclick="loadDocument('./code/2/tag.pdf')">Селектор тегу</button>
-        <button onclick="loadDocument('./code/2/class.txt')">Селектор класу</button>
-        <button onclick="loadDocument('./code/2/id.txt')">Селектор ідентифікатора</button>
-        <button onclick="loadDocument('./code/2/others.txt')">Інші селектори</button>
-        <button onclick="loadDocument('./code/2/font.txt')">Шрифт</button>
-        <button onclick="loadDocument('./code/2/table.txt')">Фон, Списки, Таблиці</button>
-        <button onclick="loadDocument('./code/2/pro.txt')">Просунутий css</button>
-        <button onclick="loadDocument('./code/2/conc.txt')">Висновки</button>
+        <button onclick="loadDocument('./code/3/main-css.txt')">CSS</button>
+        <button onclick="loadDocument('./code/3/main-html.txt')">HTML</button>
+        <button
+            onclick="loadDocument('https://dariapanchuk.github.io/zpi-zp41_WEB2-PanchukDaria-2025/1.html')">Фіксована
+            таблична верстка</button>
+        <button onclick="loadDocument('https://dariapanchuk.github.io/zpi-zp41_WEB2-PanchukDaria-2025/2.html')">Гумова
+            таблична верстка</button>
+        <button
+            onclick="loadDocument('https://dariapanchuk.github.io/zpi-zp41_WEB2-PanchukDaria-2025/3.html')">Фіксована
+            блокова верстка</button>
+        <button onclick="loadDocument('https://dariapanchuk.github.io/zpi-zp41_WEB2-PanchukDaria-2025/4.html')">Гумова
+            блокова верстка</button>
+        <button onclick="loadDocument('https://dariapanchuk.github.io/zpi-zp41_WEB2-PanchukDaria-2025/5.html')">Завдання
+            3</button>
+        <button onclick="loadDocument('./code/3/3-css.txt')">CSS</button>
+        <button onclick="loadDocument('./code/3/3-html.txt')">HTML</button>
+        <button onclick="loadDocument('./code/3/conc.txt')">Висновки</button>
     </div>
 
     <!-- Embedded window (iframe) -->
